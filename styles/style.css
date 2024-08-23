@@ -264,8 +264,8 @@
 .footer__menu-list {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
   font-size: 18px;
+  list-style-type: none;
 }
 
 .footer__menu-link_active {
