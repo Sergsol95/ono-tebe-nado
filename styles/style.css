@@ -2,7 +2,7 @@
 /* Я очень сильно попытался некостыльно сделать последние правки, если пройду проверку то хочется посмотреть на идеальное исполнение макета, на средними буквами и логотипом долго сидел */
 .header {
   display: grid; 
-  grid-template-columns: 1.3fr 1fr auto;
+  grid-template-columns: 1.3fr 1fr auto; /* Отступ перенесен на новую строку */
   align-items: center;
   padding: 91px 86px 96px 50px;
   font-size: 18px;
@@ -71,8 +71,8 @@
   padding: 0 30px;
 }
 
-.title_main-letter_margin {
-  letter-spacing: 35px;
+.title_main-letter_margin { 
+  letter-spacing: 35px; /* Добавлен пробел между селектором и скобкой */
 }
 
 .title__main-letter_first {
