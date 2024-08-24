@@ -1,8 +1,8 @@
 /* место для вашего кода */
+/* Я очень сильно попытался некостыльно сделать последние правки, если пройду проверку то хочется посмотреть на идеальное исполнение макета, на средними буквами и логотипом долго сидел */
 .header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+  display: grid; 
+  grid-template-columns: 1.3fr 1fr auto;
   align-items: center;
   padding: 91px 86px 96px 50px;
   font-size: 18px;
@@ -24,7 +24,6 @@
 .header__navigation-logo {
   width: 145px;
   height: 105px;
-  transform: translate(-50%);
 }
 
 .address__info {
@@ -41,7 +40,6 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 158px 50px 50px 50px;
-  letter-spacing: 30px;
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
@@ -69,21 +67,27 @@
   text-transform: uppercase;
 }
 
+.tittle__main-letter_space{
+  padding: 0 30px;
+}
+
 .title_main-letter_margin {
-  margin-left: -23px;
+  letter-spacing: 35px;
 }
 
 .title__main-letter_first {
-  margin-right: 32px;
+  letter-spacing: 36px;
 }
 
 .position__start {
   align-self: start;
+  letter-spacing: 3px;
 }
 
 .position__middle {
+  display: flex;
   align-self: center;
-  margin-left: -23px;
+  letter-spacing: 31px;
 }
 
 .position__end {
@@ -152,6 +156,7 @@
   flex-basis: 334px;
   align-items: stretch;
   max-width: 334px;
+  height: 100%;
   min-height: 563px;
   padding: 50px 40px 48px 40px;
   background-position: center;
@@ -170,11 +175,11 @@
 }
 
 .card__item-link {
-  z-index: 1;
   text-decoration: none;
 }
 
 .card__item-cover {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
